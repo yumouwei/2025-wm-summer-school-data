@@ -1,0 +1,25 @@
+[project]
+name = "2025-wm-summer-school-data"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "yumouwei",email = "46117079+yumouwei@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4"
+dependencies = [
+    "disruption-py @ git+https://github.com/MIT-PSFC/disruption-py.git@fbc1151",
+    "pandas (>=2.2.3,<3.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "jupyter (>=1.1.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+create = true
+in-project = true
+
